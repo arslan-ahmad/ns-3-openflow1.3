@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.29
+
+Name: libns3-openflow
+Description: ns-3 module ns3-openflow
+Version: 3.29
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.29-openflow-debug -L/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/openflow/build/default -L/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/openflow/lib -L/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/openflow/build/default -L/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/openflow/lib -lopenflow -ldl -ldl -lxml2
+Cflags: -I${includedir} -DNS3_OPENFLOW -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/openflow/include
+Requires: libns3.29-internet-debug

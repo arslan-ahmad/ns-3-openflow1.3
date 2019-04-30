@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.29
+
+Name: libns3-ofswitch13
+Description: ns-3 module ns3-ofswitch13
+Version: 3.29
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.29-ofswitch13-debug -L/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/udatapath -ldl -lns3ofswitch13
+Cflags: -I${includedir} -DNS3_OFSWITCH13 -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13 -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/include -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/lib -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/oflib -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/oflib-exp -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/secchan -I/home/ubuntu/Documents/workspace/ns-allinone-3.29/ns-3.29/src/ofswitch13/lib/ofsoftswitch13/udatapath
+Requires: libns3.29-core-debug libns3.29-network-debug libns3.29-internet-debug libns3.29-csma-debug libns3.29-point-to-point-debug libns3.29-virtual-net-device-debug libns3.29-applications-debug
